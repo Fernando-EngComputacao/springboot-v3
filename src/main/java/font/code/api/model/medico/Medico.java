@@ -4,13 +4,13 @@ import font.code.api.model.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name = "medico")
+@Table(name = "medicos")
 @Entity(name = "Medico")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Medico {
+public class Medico { 
 
     @Id @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long Id;
