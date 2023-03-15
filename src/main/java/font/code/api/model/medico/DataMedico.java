@@ -12,6 +12,10 @@ public record DataMedico(
         String nome,
         @NotBlank @Email
         String email,
+
+        @NotBlank
+        String telefone,
+
         @NotBlank @Pattern(regexp = "\\d{4,6}") // d (dígito) { de 4 a 6 dígitos}
         String crm,
         @NotNull
